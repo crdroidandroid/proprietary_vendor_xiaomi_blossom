@@ -667,6 +667,7 @@ PRODUCT_PACKAGES += \
     ccci_fsd \
     ccci_mdinit \
     ccci_rpcd \
+    charon \
     epdg_wod \
     fuelgauged \
     fuelgauged_nvram \
@@ -741,6 +742,8 @@ PRODUCT_PACKAGES += \
     netdagent \
     netdc \
     nvram_daemon \
+    starter \
+    stroke \
     teei_daemon \
     thermal \
     thermal_manager \

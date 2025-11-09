@@ -8806,6 +8806,23 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+	name: "charon",
+	owner: "xiaomi",
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/bin/charon"],
+			shared_libs: ["libstrongswan", "libhydra", "libcharon-ss", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
 	name: "epdg_wod",
 	owner: "xiaomi",
 	target: {
@@ -9656,6 +9673,40 @@ cc_prebuilt_binary {
 		android_arm: {
 			srcs: ["proprietary/vendor/bin/nvram_daemon"],
 			shared_libs: ["libcutils", "libnvram", "libcustom_nvram", "libfile_op", "libnvram_daemon_callback", "liblog", "libhwm", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "starter",
+	owner: "xiaomi",
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/bin/starter"],
+			shared_libs: ["libstrongswan", "libhydra", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "stroke",
+	owner: "xiaomi",
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/bin/stroke"],
+			shared_libs: ["libstrongswan", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
