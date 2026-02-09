@@ -671,7 +671,7 @@ PRODUCT_PACKAGES += \
     fuelgauged \
     fuelgauged_nvram \
     gsm0710muxd \
-    android.hardware.biometrics.fingerprint@2.1-service \
+    android.hardware.biometrics.fingerprint@2.1-service_blossom \
     android.hardware.bluetooth@1.0-service-mediatek \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.gnss@2.1-service-mediatek \
