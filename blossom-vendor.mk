@@ -245,6 +245,7 @@ PRODUCT_PACKAGES += \
     libudf \
     libufwriter \
     libusc \
+    libutils-v30 \
     libwvhidl \
     libwvdrmengine \
     vendor.mediatek.hardware.audio@6.1 \
@@ -576,7 +577,6 @@ PRODUCT_PACKAGES += \
     libthermalalgo \
     libthha \
     libtqvalidate \
-    libutils-v30 \
     libutinterface_custom_md \
     libutinterface_md \
     libvc1dec_sa.ca7 \
