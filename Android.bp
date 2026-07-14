@@ -5700,14 +5700,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libmnl",
+	name: "libmnl_mtk",
 	owner: "xiaomi",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libmnl.so"],
+			srcs: ["proprietary/vendor/lib/libmnl_mtk.so"],
 			shared_libs: ["libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -9566,7 +9566,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/bin/mnld"],
-			shared_libs: ["libshim_sensors", "libmnl", "libcurl", "libcutils", "libnvram", "libcrypto", "libssl", "libz", "liblog", "libhardware", "libladder", "libDR", "libutils", "android.frameworks.sensorservice@1.0", "android.hardware.sensors@1.0", "libhidlbase", "libhidltransport", "libsensorndkbridge", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libshim_sensors", "libmnl_mtk", "libcurl", "libcutils", "libnvram", "libcrypto", "libssl", "libz", "liblog", "libhardware", "libladder", "libDR", "libutils", "android.frameworks.sensorservice@1.0", "android.hardware.sensors@1.0", "libhidlbase", "libhidltransport", "libsensorndkbridge", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
