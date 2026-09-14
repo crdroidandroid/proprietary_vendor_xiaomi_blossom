@@ -478,7 +478,7 @@ PRODUCT_PACKAGES += \
     libmibokeh_mt6768 \
     libmmprofile \
     libmnetlink_v104 \
-    libmnl \
+    libmnl_mtk \
     libmp4enc_sa.ca7 \
     libmp4enc_xa.ca7 \
     libmpbase \
